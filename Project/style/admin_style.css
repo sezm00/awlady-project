@@ -1,0 +1,185 @@
+.raleway-qoute{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+.yeseva-one-regular {
+      font-family: "Yeseva One", serif;
+      font-weight: 400;
+      font-style: normal;
+}
+.asar-regular {
+    font-family: "Asar", serif;
+    font-weight: 400;
+    font-style: normal;
+} 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Raleway", sans-serif;
+}
+.mainContainer{
+    display: flex;
+    flex-direction: row;
+    
+}
+.header{
+    border: 1px solid #000;
+    width: 250px;
+    height: 100vh;
+}
+.sideNav{
+    width: 110px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px 15px;
+    background-color: #fdd561;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    transition: width 0.5s;
+}
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60px;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+.user div{
+    display: none;
+}
+.user h2{
+    font-size: 15px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.userImg{
+    width: 30px;
+    border-radius: 50%;
+    margin: auto;
+}
+.starImg{
+    width: 25px;
+    display: none;
+
+}
+.header .sideNav ul{
+    text-decoration: none;
+    list-style: none;
+    padding: 0 15px;
+}
+.header .sideNav ul li{
+    text-decoration: none;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.header .sideNav ul li img{
+    width: 25px;
+    margin-right: 0;
+    transition: width 0.6s;
+}
+.header .sideNav ul li p{
+    text-decoration: none;
+    white-space: nowrap;
+    display: none;
+}
+.header .sideNav ul li a {
+   
+    text-decoration: none;
+}
+.header .sideNav ul li a p{ 
+    text-decoration: none;
+}
+
+.sideNav:hover{
+    width: 250px;
+}
+.sideNav:hover .user div{
+    display: block;
+}
+.sideNav:hover .user{
+    width: 100%;
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(5px);
+}
+.sideNav:hover .starImg{
+    display: block;
+}
+.sideNav:hover .userImgImg{
+    margin: 0;
+}
+.sideNav:hover ul li p{
+    display: block;
+}
+.sideNav:hover ul li img{
+    margin-right: 10px;
+    width: 25px;
+}
+.sideNav:hover ul li{
+    text-decoration: none;
+    justify-content: flex-start;
+}
+.sideNav:hover ul li a{
+    text-decoration: none;
+    display: block;
+}
+.sideNav ul li a {
+    text-decoration: none;
+    position: relative; 
+    color: #000; 
+    transition: font-size 0.2s;
+}
+
+.sideNav ul li a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #000;
+    transition: width 0.3s;
+    visibility: hidden; 
+}
+.sideNav ul li a:hover{
+    font-size: larger;
+}
+.sideNav ul li a:hover::after {
+    width: 100%;
+    visibility: visible; 
+}
+.tasks-container {
+    background-color: #e4e4e4; 
+    margin-left: 300px; 
+    padding: 20px; 
+}
+
+.task-details {
+    background-color: #cfcfcf ; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    border-radius: 8px; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+}
+
+.task-details p {
+    margin-bottom: 5px; 
+}
+
+
+
